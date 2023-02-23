@@ -19,6 +19,10 @@ Categories jadval category_name va description ustun ma’lumotlarini qaytaring
 
 query
 
+select category_name, description from categories;
+
+result
+
 ![image](https://user-images.githubusercontent.com/122611919/220971139-f170a8dd-c1cc-48bc-89e5-66e7dbd3d182.png)
 
 
