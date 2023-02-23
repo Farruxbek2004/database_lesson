@@ -236,6 +236,222 @@ Result
 
 
 
+Task 16
+
+Question
+
+Customers jadvalidan fax ustun NULL bo’lmalgan ma’lumotlarni contact_name ustun
+alifbo tartiba tartiblab qaytaring.
+
+Query
+
+select * from customers where fax is not null order by contact_name;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220983044-acd7fd6c-e125-4ce8-88a1-0a1b6df9f30e.png)
+
+![image](https://user-images.githubusercontent.com/122611919/220983081-6379b911-566d-411d-aaaa-ee8d0396897e.png)
+
+
+
+Task 17
+
+Question
+
+Employees jadvaldan barcha ma’lumotlarni qaytaring.
+
+Query
+
+select * from employees
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220983398-e62f61eb-859b-436f-98b5-3d238e14ccd9.png)
+
+
+
+Task 18
+
+Question
+
+Employees jadval ustun nomlarini o’zbekcha qaytaring
+
+Query
+
+
+select
+employee_id as id ,
+first_name as ismi ,
+last_name as familiya ,
+title as sarlavha,
+address as adres ,
+title_of_courtesy as "murojaat qilish odobi",
+birth_date as "tug'ilgan sanasi",
+hire_date as "ishga qabul qilingan sanasi",
+address as adres,
+city as shahar,
+region as hudud,
+postal_code as "pochta kodi",
+country as viloyat,
+home_phone as "uy telefon",
+extension as kengaytma,
+photo as rasm,
+photo_path as "rasm linki",
+notes as elsatmalar
+from employees;
+
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220984205-73d14ac6-3172-479a-840e-9c6109fe9b0d.png)
+
+
+![image](https://user-images.githubusercontent.com/122611919/220984397-badb57f0-df55-4a50-95c8-5dc2d02d38a0.png)
+
+
+Task 19
+
+Question
+
+Employess jadvaldan title_of_courtest ‘Mr’ bo’lgan xodimlarni firts_name alifbo tartibida
+qaytaring.
+
+
+Query
+
+select * from employees where title_of_courtesy = 'Mr.' order by first_name;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220984801-69b5bb29-70fb-40af-bb33-5e4919f92d17.png)
+
+
+
+Task 20
+
+Question
+
+Employes jadvalda title ‘Sales Representative’ bo’lgan xodimlar sonini qaytaring.
+
+Query
+
+select count(title) from employees where title = 'Sales Representative';
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220984999-9e6eca02-9d26-4c90-a91a-11bf95114822.png)
+
+
+
+Task 21
+
+Question
+
+Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.
+
+Query
+
+select * from employees where hire_date between '1994-01-01' and '1994-12-31';
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220985385-78107e45-8285-4ac2-8aea-796f2fe97afc.png)
+
+
+
+Task 22
+
+Question
+
+Employes jadvaldan region NULL bo’lmagan xodimlarni first_name, last_name, title, city,
+home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.
+
+Query
+
+select first_name, last_name, title, city, home_phone from employees where region is not null order by first_name desc;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220985600-70012cc9-a38f-4057-92fc-ccb7fb81ddbc.png)
+
+
+Task 23
+
+Question
+
+Orders jadvaldan customer_id ‘VINET’ bo’lgan buyurtmalarni qaytaring.
+
+Query
+
+select * from orders where customer_id = 'VINET';
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220985887-1f2e82d3-7804-430f-9edb-f1e88545b62e.png)
+
+
+Task 24
+
+Question
+
+
+Orders jadvaldan order_date ustuni orqali 1996-yildagi ma’lumotlarni qaytaring.
+
+Query
+
+select * from orders where order_date between '1996-01-01' and '1996-12-31';
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220986166-6f0ab6fe-73e9-49c6-a968-928cc6b5cc37.png)
+
+
+Task 25
+
+Question
+
+Orders jadvaldan ship_region ustun NULL bo’lmagan ma’lumotlarni qaytaring.
+
+Query
+
+select * from orders where ship_region is not null;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220986504-6551fcce-2892-41d3-9e69-f7b926537403.png)
+
+
+
+Task 26
+
+Question
+
+ Orders jadvaldan order_id 10300 va 10400 orasida bo’lgan ma’lumotlarni qaytaring
+
+Query
+
+select * from orders where order_id between 10300 and 10400;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220986766-a4e9d32e-454a-4b95-95ef-f3d8ba5a28c6.png)
+
+
+Task 27
+
+Question
+
+Order Details jadvaldan unit_price ustun umumiy qiymatini qaytaring.
+
+Query
+
+select sum(unit_price) from order_details;
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220986935-08bcbf75-aa6d-4fd3-8fb7-bb0a9906b549.png)
+
 
 
 
