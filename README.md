@@ -74,5 +74,39 @@ Result
 
 
 
+Task 6
+
+Question
+
+Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.
+
+Query
+
+ select * from categories limit 3 offset 5
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220973440-c6ed4349-fa2a-437b-8e3a-9cf263ed4961.png)
+
+
+
+Task 7
+
+Question
+
+Categories jadvaldan ma’lumotlarni description alifbo bo’yicha Z-A tartibida chiqaring.
+
+Query
+
+select * from categories order by description desc 
+
+Result
+
+![image](https://user-images.githubusercontent.com/122611919/220974055-f095fcbe-c925-4ccb-ae19-a4e1565252d0.png)
+
+
+
+
+
 
 
