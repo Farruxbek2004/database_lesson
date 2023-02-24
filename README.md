@@ -4,7 +4,7 @@ Question
 
 Categories jadval barcha ustun ma’lumotlarini bilan qaytaring?
 
-Query
+answer
 
 select * from categories;
 
@@ -17,7 +17,7 @@ Question
 
 Categories jadval category_name va description ustun ma’lumotlarini qaytaring
 
-Query
+answer
 
 select category_name, description from categories;
 
@@ -32,7 +32,7 @@ Question
 Categories jadval barcha ustun ma’lumotlari olishda ustun nomlarini o’zbekcha tarjimada
 qaytaring. M-n: category_name=Nomi
 
-Query
+answer
 
 select category_id as id, category_name as nomi, description as tavsif from categories
 
@@ -48,7 +48,7 @@ Categories jadvaldan kategoriya nomi ’Confections’ ga teng bo’lgan ma’lu
 qaytaring.
 
 
-Query
+answer
 
 select * from categories where category_name = 'Confections'
 
@@ -64,7 +64,7 @@ Question
 Categories jadvaldan kategoriya nomi ‘Produce’ yoki ‘Seafood’ bo’lgan ma’lumotlarni
 qaytaring.
 
-Query
+answer
 
 select * from categories where category_name = 'Produce' or  category_name = 'Seafood';
 
@@ -80,7 +80,7 @@ Question
 
 Categories jadvaldan quyida belgilangan ma’lumotlarni qaytaring.
 
-Query
+answer
 
  select * from categories limit 3 offset 5
 
@@ -96,7 +96,7 @@ Question
 
 Categories jadvaldan ma’lumotlarni description alifbo bo’yicha Z-A tartibida chiqaring.
 
-Query
+answer
 
 select * from categories order by description desc 
 
@@ -112,7 +112,7 @@ Question
 
 Customers jadvalidan barcha ma’lumotlarni oling.
 
-Query
+answer
 
 select * from customers; 
 
@@ -127,7 +127,7 @@ Question
 
 Customers jadvalida ustun nomlarini o’zbekcha holatda oling.
 
-Query
+answer
 
 select customer_id as id, company_name as shirkat_nomi, contact_name as kontakt_nomi, contact_title as kontakt_sarlavhasi,
        address as manzil, city as shahar, region as mintaqa, postal_code as pochta_kodi, country as mamlakat,
@@ -147,7 +147,7 @@ Question
 
 Customers jadvalidan contact_title ‘Owner’ bo’lgan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from customers where contact_title = 'Owner'
 
@@ -162,7 +162,7 @@ Question
 
 Customers jadvalidan city ‘London’ bo’lgan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from customers where city = 'London'
 
@@ -178,7 +178,7 @@ Question
 
 Customers jadvalidan region ustun NULL bo’lgan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from customers where region is null
 
@@ -194,7 +194,7 @@ Question
 Customers jadvalidan region ustun NULL bo’lmagan ma’lumotlarni qaytaring.
 
 
-Query
+answer
 
 select * from customers where region is not null;
 
@@ -210,7 +210,7 @@ Question
 
 Customers jadvalidan country ustun Germany bo’lgan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from customers where country = 'Germany';
 
@@ -226,7 +226,7 @@ Question
 
  Customers jadvalidan country ustun Germany bo’lgan qatorlar sonini qaytaring.
 
-Query
+answer
 
 select count(country) from customers where country = 'Germany';
 
@@ -243,7 +243,7 @@ Question
 Customers jadvalidan fax ustun NULL bo’lmalgan ma’lumotlarni contact_name ustun
 alifbo tartiba tartiblab qaytaring.
 
-Query
+answer
 
 select * from customers where fax is not null order by contact_name;
 
@@ -261,7 +261,7 @@ Question
 
 Employees jadvaldan barcha ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from employees
 
@@ -277,7 +277,7 @@ Question
 
 Employees jadval ustun nomlarini o’zbekcha qaytaring
 
-Query
+answer
 
 
 select
@@ -318,7 +318,7 @@ Employess jadvaldan title_of_courtest ‘Mr’ bo’lgan xodimlarni firts_name a
 qaytaring.
 
 
-Query
+answer
 
 select * from employees where title_of_courtesy = 'Mr.' order by first_name;
 
@@ -334,7 +334,7 @@ Question
 
 Employes jadvalda title ‘Sales Representative’ bo’lgan xodimlar sonini qaytaring.
 
-Query
+answer
 
 select count(title) from employees where title = 'Sales Representative';
 
@@ -350,7 +350,7 @@ Question
 
 Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from employees where hire_date between '1994-01-01' and '1994-12-31';
 
@@ -367,7 +367,7 @@ Question
 Employes jadvaldan region NULL bo’lmagan xodimlarni first_name, last_name, title, city,
 home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.
 
-Query
+answer
 
 select first_name, last_name, title, city, home_phone from employees where region is not null order by first_name desc;
 
@@ -382,7 +382,7 @@ Question
 
 Orders jadvaldan customer_id ‘VINET’ bo’lgan buyurtmalarni qaytaring.
 
-Query
+answer
 
 select * from orders where customer_id = 'VINET';
 
@@ -398,7 +398,7 @@ Question
 
 Orders jadvaldan order_date ustuni orqali 1996-yildagi ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from orders where order_date between '1996-01-01' and '1996-12-31';
 
@@ -413,7 +413,7 @@ Question
 
 Orders jadvaldan ship_region ustun NULL bo’lmagan ma’lumotlarni qaytaring.
 
-Query
+answer
 
 select * from orders where ship_region is not null;
 
@@ -429,7 +429,7 @@ Question
 
  Orders jadvaldan order_id 10300 va 10400 orasida bo’lgan ma’lumotlarni qaytaring
 
-Query
+answer
 
 select * from orders where order_id between 10300 and 10400;
 
@@ -444,7 +444,7 @@ Question
 
 Order Details jadvaldan unit_price ustun umumiy qiymatini qaytaring.
 
-Query
+answer
 
 select sum(unit_price) from order_details;
 
