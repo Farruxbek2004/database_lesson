@@ -116,6 +116,46 @@ result
 ![image](https://user-images.githubusercontent.com/122611919/221351473-1df79d3f-bf72-4d58-b180-fc9c439bd1c3.png)
 
 
+task 8
+
+question
+
+From the following table, write a SQL query to identify the unique salespeople ID. Return salesman_id.
+ 
+query
+ 
+```python sql
+selct distinct salesman_id
+from orders
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351583-1d46d533-991b-46be-89d2-62bc602117fd.png)
+
+
+task 9
+
+
+question
+
+From the following table, write a SQL query to locate salespeople who live in the city of 'Paris'. Return salesperson's name, city.
+
+query
+
+```python sql
+select name,city
+from salesman
+where city='Paris'
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351671-304d3011-daf3-4abb-811d-98a34067fd2b.png)
+
+
+
+
 
 
 
