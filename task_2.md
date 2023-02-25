@@ -374,7 +374,238 @@ result
 ![image](https://user-images.githubusercontent.com/122611919/221355599-437d7680-eb8b-4b6e-906c-6037df96e655.png)
 
 
+task 22
 
+question
+
+From the following table, write a SQL query to find the details of the Nobel Prize winner 'Johannes Georg Bednorz'. Return year, subject, winner, country, and category.
+
+query
+
+```
+python sql
+select * from nobel_win 
+where winner='Johannes Georg Bednorz'
+```
+
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221356010-b7874935-745d-46a8-87ca-d2c12fcdde29.png)
+
+
+
+task 23
+
+question
+
+From the following table, write a SQL query to find Nobel Prize winners for the subject that does not begin with the letter 'P'. Return year, subject, winner, country, and category. Order the result by year, descending and winner in ascending
+
+
+query
+
+```
+python sql
+select * from nobel_win where subject not like 'P%' order by year desc, winner
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221356597-03b6bf9d-e9bf-45e7-9d64-4389e2c693d7.png)
+
+
+task 24
+
+question
+
+From the following table, write a SQL query to find the details of 1970 Nobel Prize winners. Order the results by subject, ascending except for 'Chemistry' and ‘Economics’ which will come at the end of the result set. Return year, subject, winner, country, and category.
+
+
+query
+
+```python sql
+select * from nobel_win where year=1970 
+order by case when subject in ('Economics','Chemistry') then 1 else 0
+end asc, subject, winner
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221356908-5d651750-7425-4ef3-a4bd-a5bb5c473086.png)
+
+
+task 25
+
+
+question
+
+
+From the following table, write a SQL query to select a range of products whose price is in the range Rs.200 to Rs.600. Begin and end values are included. Return pro_id, pro_name, pro_price, and pro_com.
+
+
+query
+
+```python sql
+select * from item_mast where pro_price between 200 and 600 order by pro_price
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357059-dc4c3ee0-9dec-477e-89b8-62edc87bcf0a.png)
+
+
+task 26
+
+question
+
+From the following table, write a SQL query to calculate the average price for a manufacturer code of 16. Return avg.
+
+query
+
+```python sql
+select avg(pro_price) as ortacha_qiymat from item_mast where pro_com=16
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357145-2d45bb2c-d950-47cb-aa9c-59ab664a40d8.png)
+
+
+task 27
+
+question
+
+From the following table, write a SQL query to display the pro_name as 'Item Name' and pro_priceas 'Price in Rs.' 
+
+
+query
+
+```python sql
+select pro_name as "Item Name", pro_price as "Price in Rs."
+from item_mast
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357230-827ed47f-5a7c-4a18-9aca-832ebf2a3524.png)
+
+
+task 28
+
+question
+
+ From the following table, write a SQL query to find the items whose prices are higher than or equal to $250. Order the result by product price in descending, then product name in ascending. Return pro_name and pro_price
+ 
+ 
+ query
+ 
+ ```python sql
+ select pro_name, pro_price from item_mast
+where pro_price >= 250
+order by pro_price desc, pro_name
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357360-1b1462a0-6397-4326-a351-714df7f9e958.png)
+
+
+task 29
+
+question
+
+From the following table, write a SQL query to calculate average price of the items for each company. Return average price and company code.
+
+
+query
+
+```python sql
+select avg(pro_price), pro_com
+from item_mast group by pro_com
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357463-d0d4eec3-fbd5-438e-984a-52141a05e89d.png)
+
+
+task 30
+
+question
+
+From the following table, write a SQL query to find the cheapest item(s). Return pro_name and, pro_price
+
+
+query
+
+```python sql
+select pro_name, pro_price from item_mast
+where pro_price = (select min(pro_price) from item_mast)
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357535-5048070b-ed57-4fcc-980a-2db66535f475.png)
+
+
+task 31
+
+question
+
+From the following table, write a SQL query to find the unique last name of all employees. Return emp_lname
+
+
+query
+
+```python sql
+select distinct emp_lname
+from emp_details
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357594-579a1ba6-8d08-4769-b256-62bf3a7a1ac7.png)
+
+ 
+task 32
+
+question
+
+From the following table, write a SQL query to find the details of employees whose last name is 'Snares'. Return emp_idno, emp_fname, emp_lname, and emp_dept.
+
+
+query
+
+```python sql
+select * from emp_details where emp_lname= 'Snares'
+```
+
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357665-41af946e-5f46-44ad-b78a-3a98c96083bb.png)
+
+
+task 33
+
+
+question
+
+From the following table, write a SQL query to retrieve the details of the employees who work in the department 57. Return emp_idno, emp_fname, emp_lname and emp_dept.
+
+
+query
+
+```python sql
+select * from emp_details where emp_dept= 57
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221357692-9676aee2-a311-4e39-aff4-9d4a56ad2892.png)
+
+ 
+ 
 
 
 
