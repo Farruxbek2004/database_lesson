@@ -48,7 +48,38 @@ result
 
 task 4
 
-qustion
+question
+
+Write a SQL query to display the sum of two numbers 10 and 15 from the RDBMS server.
+
+query
+
+```python sql
+select 5 + 20
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351236-316c0405-3cd6-47e9-abe6-f35a5fec8e26.png)
+
+
+task 5
+
+question
+
+Write an SQL query to display the result of an arithmetic expression.
+
+query
+
+```python sql
+select (20 + 5 - 3 * 5) / 2
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351282-9f4424e1-6864-4ef9-8de2-2f032ea5bed2.png)
+
+
 
 
 
