@@ -180,7 +180,7 @@ From the following table, write a SQL query to find orders that are delivered by
 
 query
 
-```python
+```python sql
 select ord_no, ord_date, purch_amt
 from orders
 where salesman_id=5001
@@ -189,6 +189,48 @@ where salesman_id=5001
 result
 
 ![image](https://user-images.githubusercontent.com/122611919/221354345-4cbac0e0-c826-45a9-8832-b1be7a5a712e.png)
+
+
+task 12
+
+question
+
+
+From the following table, write a SQL query to find the Nobel Prize winner(s) for the year 1970. Return year, subject and winner.
+
+
+query
+
+```python sql
+select year,subject,winner 
+from nobel_win 
+where year=1970;
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221354594-c8fe4e3a-0df9-4d2a-b559-d8ad964035a7.png)
+
+
+task 13
+
+question
+
+From the following table, write a SQL query to find the Nobel Prize winner in ‘Literature’ for 1970. Return winner.
+
+query
+
+```java
+select winner from nobel_win where year = 1971 and 
+subject = 'Literature'
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221354737-00cfad76-2e50-44ad-b197-2d4dfd8ece52.png)
+
+
+
 
 
 
