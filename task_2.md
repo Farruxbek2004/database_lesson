@@ -44,3 +44,23 @@ select 1, 2, 3
 result
 
 ![image](https://user-images.githubusercontent.com/122611919/221349800-e8706f8c-5591-41d0-a7a6-80c6645ded7e.png)
+
+
+task 4
+
+qustion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
