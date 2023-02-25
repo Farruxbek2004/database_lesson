@@ -80,6 +80,43 @@ result
 ![image](https://user-images.githubusercontent.com/122611919/221351282-9f4424e1-6864-4ef9-8de2-2f032ea5bed2.png)
 
 
+task 6
+
+question
+
+Write a SQL statement to display specific columns such as names and commissions for all
+
+query
+
+```python sql
+select name, commission
+from salesman
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351411-5eff8b9c-3c02-4bbf-a6be-58aeeb9f9501.png)
+
+
+task 7
+
+question
+
+Write a query to display the columns in a specific order, such as order date, salesman ID, order number, and purchase amount for all orders.
+
+query
+
+```python sql
+select ord_date, salesman_id, ord_no, purch_amt
+from orders
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221351473-1df79d3f-bf72-4d58-b180-fc9c439bd1c3.png)
+
+
+
 
 
 
