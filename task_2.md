@@ -154,6 +154,44 @@ result
 ![image](https://user-images.githubusercontent.com/122611919/221351671-304d3011-daf3-4abb-811d-98a34067fd2b.png)
 
 
+task 10
+
+question
+
+From the following table, write a SQL query to find customers whose grade is 200. Return customer_id, cust_name, city, grade, salesman_id.
+
+query
+
+```python sql
+select customer_id, cust_name, city, grade, salesman_id from customer
+where grade=200
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221354239-b940b950-6163-4410-9872-4748b149679a.png)
+
+
+task 11
+
+question
+
+From the following table, write a SQL query to find orders that are delivered by a salesperson with ID. 5001. Return ord_no, ord_date, purch_amt.  
+
+query
+
+```python
+select ord_no, ord_date, purch_amt
+from orders
+where salesman_id=5001
+```
+
+result
+
+![image](https://user-images.githubusercontent.com/122611919/221354345-4cbac0e0-c826-45a9-8832-b1be7a5a712e.png)
+
+
+
 
 
 
