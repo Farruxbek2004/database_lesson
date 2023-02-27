@@ -174,22 +174,11 @@ query
 ```python sql
 select * from  orders where not((ord_date ='2012-08-17' 
 or customer_id>3005) and purch_amt<1000)
-
+```
 
 result
 
 ![image](https://user-images.githubusercontent.com/122611919/221358647-40f7578b-fc17-4a37-a3e3-117df97eae9b.png)
-
-
-task 10
-
-question
-
-Write a SQL query that displays order number, purchase amount, and the achieved and unachieved percentage (%) for those orders that exceed 50% of the target value of 6000. 
-
-query
-
-
 
 
 task 11
