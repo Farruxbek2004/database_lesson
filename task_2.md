@@ -421,17 +421,6 @@ question
 From the following table, write a SQL query to find the details of 1970 Nobel Prize winners. Order the results by subject, ascending except for 'Chemistry' and ‘Economics’ which will come at the end of the result set. Return year, subject, winner, country, and category.
 
 
-query
-
-```python sql
-select * from nobel_win where year=1970 
-order by case when subject in ('Economics','Chemistry') then 1 else 0
-end asc, subject, winner
-```
-
-result
-
-![image](https://user-images.githubusercontent.com/122611919/221356908-5d651750-7425-4ef3-a4bd-a5bb5c473086.png)
 
 
 task 25
