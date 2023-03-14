@@ -2,7 +2,8 @@
 task 1
 
 
-```sql
+```python sql
+
 create or replace function value_finder(a varchar)
     returns text
     language plpgsql as
