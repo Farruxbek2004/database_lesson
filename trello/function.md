@@ -28,4 +28,4 @@ select value_finder('ru');
 
 
 
-![image](https://user-images.githubusercontent.com/122611919/225271312-7a416a47-2164-41ce-a128-5c668b0f0a7e.png)
+![image](https://user-images.githubusercontent.com/122611919/225286778-e4f398c2-855e-4e85-91e1-c16223e81b62.png)
