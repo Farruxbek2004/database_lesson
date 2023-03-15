@@ -18,7 +18,11 @@ end;
 $$;
 ```
 select value_finder('en');
-select value_finder('ru')
+
+
+
+select value_finder('ru');
+
 
 ![image](https://user-images.githubusercontent.com/122611919/225271280-ef6ca6ce-4f31-4608-a6d8-12114ef17a7d.png)
 
