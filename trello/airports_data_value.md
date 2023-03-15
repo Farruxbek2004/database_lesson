@@ -20,4 +20,5 @@ $$;
 select airports_data_by_upper('en')
 
 
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/122611919/225272001-fe959608-13a5-4cce-862d-409eb97c68a9.png)
+
