@@ -24,7 +24,8 @@ select value_finder('en');
 select value_finder('ru');
 
 
-![image](https://user-images.githubusercontent.com/122611919/225271280-ef6ca6ce-4f31-4608-a6d8-12114ef17a7d.png)
+![img_4.png](img_4.png)
+
 
 
 ![image](https://user-images.githubusercontent.com/122611919/225271312-7a416a47-2164-41ce-a128-5c668b0f0a7e.png)
