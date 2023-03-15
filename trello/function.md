@@ -20,7 +20,7 @@ $$;
 select value_finder('en');
 select value_finder('ru')
 
-![img_2.png](img_2.png)
+![image](https://user-images.githubusercontent.com/122611919/225271280-ef6ca6ce-4f31-4608-a6d8-12114ef17a7d.png)
 
 
-![img_3.png](img_3.png)
+![image](https://user-images.githubusercontent.com/122611919/225271312-7a416a47-2164-41ce-a128-5c668b0f0a7e.png)
