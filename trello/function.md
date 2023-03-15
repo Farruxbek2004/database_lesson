@@ -17,11 +17,11 @@ end;
 
 $$;
 ```
-select value_finder('en');
+select aircraft_code,value_finder('en'), range from aircrafts_data;
 
 
 
-select value_finder('ru');
+select aircraft_code,value_finder('ru'), range from aircrafts_data;
 
 
 ![image](https://user-images.githubusercontent.com/122611919/225286590-0f0e4d74-caf8-438a-b61d-befdf62722aa.png)
