@@ -97,45 +97,49 @@ $$;
 --     aircrafts_data
 
 
-![img_2.png](img_2.png)
+![image](https://user-images.githubusercontent.com/122611919/225611618-f29d741d-916f-41cb-9537-f70b324ee97c.png)
+
 
 
 -- airports_data
 
 
-![img_3.png](img_3.png)
+![image](https://user-images.githubusercontent.com/122611919/225611941-b2263104-7b03-47a0-83da-44949c50c0dc.png)
+
 
 
 
 -- boarding_passes
 
-![img_4.png](img_4.png)
 
+
+![image](https://user-images.githubusercontent.com/122611919/225612276-c5b7777b-f30f-4c2c-9215-a97ad07f25de.png)
 
 
 -- bookings
 
 
-![img_5.png](img_5.png)
+![image](https://user-images.githubusercontent.com/122611919/225612733-d4ce7f27-cdf9-4838-b274-45da15b3f531.png)
+
 
 
 -- flights
 
 
-![img_6.png](img_6.png)
+![image](https://user-images.githubusercontent.com/122611919/225613080-295df043-5018-4244-8875-d7a76cd3b5a2.png)
+
 
 
 -- seats
 
 
-![img_7.png](img_7.png)
+![image](https://user-images.githubusercontent.com/122611919/225613409-e4b6e134-83e2-448c-95ef-b412c8d75ba2.png)
+
 
 
 
 -- ticket_flights
 
-
-![img_8.png](img_8.png)
 
 
 --     tickets
