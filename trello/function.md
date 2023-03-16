@@ -17,15 +17,15 @@ end;
 
 $$;
 ```
-select value_finder('en');
+select aircraft_code,value_finder('en'), range from aircrafts_data;
 
 
 
-select value_finder('ru');
+select aircraft_code,value_finder('ru'), range from aircrafts_data;
 
 
-![img_4.png](img_4.png)
+![image](https://user-images.githubusercontent.com/122611919/225286590-0f0e4d74-caf8-438a-b61d-befdf62722aa.png)
 
 
 
-![image](https://user-images.githubusercontent.com/122611919/225271312-7a416a47-2164-41ce-a128-5c668b0f0a7e.png)
+![image](https://user-images.githubusercontent.com/122611919/225286778-e4f398c2-855e-4e85-91e1-c16223e81b62.png)
