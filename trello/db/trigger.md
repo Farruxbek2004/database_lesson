@@ -141,7 +141,11 @@ $$;
 -- ticket_flights
 
 
+![image](https://user-images.githubusercontent.com/122611919/225614238-929246a9-270c-4ee7-8f25-3298c15741d6.png)
+
+
 
 --     tickets
 
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/122611919/225614434-a172855c-8717-4f65-aa17-191d38b16af8.png)
+
