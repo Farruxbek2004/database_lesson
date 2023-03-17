@@ -79,3 +79,10 @@ select * from boarding_ticket_flights_and_ticket
 
 ![image](https://user-images.githubusercontent.com/122611919/225827207-230b0c9a-7722-4e6c-817f-1d4f74942718.png)
 
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/122611919/225872487-b30a1f60-e46c-476b-a46f-a20896201fff.png)
