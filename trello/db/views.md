@@ -12,6 +12,12 @@ where f.flight_no like '%6';
 
 select * from ticket_and_flights_data;
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225826947-ddd73b38-5699-4f87-9500-5944da812633.png)
+
+
+
 --  2
 ```sql
 create or replace view ticket_and_flights_and_boarding_passes_data as
@@ -27,6 +33,13 @@ where seat_no like '%F';
 
 select * from ticket_and_flights_data;
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225827046-3d081d2b-78b8-4de8-b530-4752dc58b25d.png)
+
+
+
+
 --  3
 ```sql
 create or replace view views_aircrafts_by_seats as
@@ -41,6 +54,12 @@ select
 
 select * from views_aircrafts_by_seats
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225827128-613e594d-5434-4ed8-8558-e9e66e7ae4eb.png)
+
+
+
 -- 4
 ```sql
 create or replace view boarding_ticket_flights_and_ticket as
@@ -57,17 +76,13 @@ create or replace view boarding_ticket_flights_and_ticket as
 select * from boarding_ticket_flights_and_ticket
 ```
 
--- 5
-```sql
-create or replace view employee_territories_employees_views as
-    select
-        em.employee_id,
-        e.city,
-        e.country,
-        em.territory_id
-    from employee_territories em inner join employees e on e.employee_id = em.employee_id
-    where country = 'USA';
+
+![image](https://user-images.githubusercontent.com/122611919/225827207-230b0c9a-7722-4e6c-817f-1d4f74942718.png)
 
 
-select * from employee_territories_employees_views;
-```
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/122611919/225872487-b30a1f60-e46c-476b-a46f-a20896201fff.png)
