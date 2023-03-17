@@ -57,7 +57,6 @@ create or replace view boarding_ticket_flights_and_ticket as
 select * from boarding_ticket_flights_and_ticket
 ```
 
-
 -- 5
 ```sql
 create or replace view employee_territories_employees_views as
