@@ -33,6 +33,13 @@ where seat_no like '%F';
 
 select * from ticket_and_flights_data;
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225827046-3d081d2b-78b8-4de8-b530-4752dc58b25d.png)
+
+
+
+
 --  3
 ```sql
 create or replace view views_aircrafts_by_seats as
@@ -47,6 +54,12 @@ select
 
 select * from views_aircrafts_by_seats
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225827128-613e594d-5434-4ed8-8558-e9e66e7ae4eb.png)
+
+
+
 -- 4
 ```sql
 create or replace view boarding_ticket_flights_and_ticket as
@@ -62,3 +75,7 @@ create or replace view boarding_ticket_flights_and_ticket as
 
 select * from boarding_ticket_flights_and_ticket
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225827207-230b0c9a-7722-4e6c-817f-1d4f74942718.png)
+
