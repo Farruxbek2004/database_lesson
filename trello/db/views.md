@@ -81,8 +81,20 @@ select * from boarding_ticket_flights_and_ticket
 
 
 
+-- 5
+```sql
+create or replace view employee_territories_employees_views as
+    select
+        em.employee_id,
+        e.city,
+        e.country,
+        em.territory_id
+    from employee_territories em inner join employees e on e.employee_id = em.employee_id
+    where country = 'USA';
 
 
+select * from employee_territories_employees_views;
+```
 
 
 ![image](https://user-images.githubusercontent.com/122611919/225872487-b30a1f60-e46c-476b-a46f-a20896201fff.png)
