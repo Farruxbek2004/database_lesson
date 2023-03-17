@@ -12,6 +12,12 @@ where f.flight_no like '%6';
 
 select * from ticket_and_flights_data;
 ```
+
+
+![image](https://user-images.githubusercontent.com/122611919/225826947-ddd73b38-5699-4f87-9500-5944da812633.png)
+
+
+
 --  2
 ```sql
 create or replace view ticket_and_flights_and_boarding_passes_data as
